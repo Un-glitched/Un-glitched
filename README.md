@@ -61,15 +61,11 @@
  
 ---
  
-<div align="center">
- 
 ## STATS — IF NUMBERS COULD SCREAM
  
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Un-glitched&show_icons=true&theme=dark&title_color=FF0055&icon_color=FF0055&text_color=ffffff&bg_color=000000&border_color=FF0055)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Un-glitched&layout=compact&theme=dark&title_color=FF0055&text_color=ffffff&bg_color=000000&border_color=FF0055)
 ![GitHub Streak](https://streak-stats.demolab.com?user=Un-glitched&theme=dark&background=000000&border=FF0055&ring=FF0055&fire=FF0055&currStreakLabel=FF0055)
- 
-</div>
  
 ---
  
@@ -101,11 +97,6 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Glitchedme-000000?style=for-the-badge&logo=linkedin&logoColor=FF0055)](https://www.linkedin.com/in/Glitchedme)
  
 ---
- 
-```
-ERR_0xFF :: PROFILE_STILL_RENDERING :: COME_BACK_LATER
-```
- 
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=Un-glitched&left_color=black&right_color=red)
  
 </div>
