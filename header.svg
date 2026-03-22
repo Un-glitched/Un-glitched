@@ -1,0 +1,57 @@
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>
+    @keyframes glitch1{0%,94%,100%{transform:translate(0,0)}95%{transform:translate(-8px,0)}97%{transform:translate(6px,0)}}
+    @keyframes glitch2{0%,87%,100%{transform:translate(0,0)}88%{transform:translate(8px,0)}90%{transform:translate(-5px,0)}}
+    @keyframes flicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:0.4}94%{opacity:1}96%{opacity:0.6}97%{opacity:1}}
+    @keyframes scanline{0%{transform:translateY(-200px)}100%{transform:translateY(400px)}}
+    .glA{animation:glitch1 5s infinite}
+    .glB{animation:glitch2 7s infinite}
+    .flicker{animation:flicker 6s infinite}
+    .scan{animation:scanline 3s linear infinite}
+  </style>
+</defs>
+
+<rect width="800" height="200" fill="#000000"/>
+
+<!-- scanline effect -->
+<rect class="scan" x="0" y="0" width="800" height="40" fill="#FF0055" opacity="0.03"/>
+
+<!-- main title group -->
+<g transform="translate(400, 100)" text-anchor="middle" font-family="monospace" font-size="70" font-weight="900">
+  
+  <!-- GLITCH SHADOW B (Cyan) -->
+  <g class="glB" opacity="0.4" fill="#00FFFF">
+    <text x="0">un-GLITCHed</text>
+  </g>
+  
+  <!-- GLITCH SHADOW A (Red) -->
+  <g class="glA" opacity="0.4" fill="#B30047">
+    <text x="0">un-GLITCHed</text>
+  </g>
+  
+  <!-- MAIN TEXT LAYER -->
+  <g class="flicker">
+    <text x="0" y="0">
+      <tspan fill="#B30047">un</tspan><tspan fill="#FFFFFF">-GLITCH</tspan><tspan fill="#B30047">ed</tspan>
+    </text>
+    
+    <!-- white strikethroughs for "un" and "ed" -->
+    <!-- Shifted 8px further from center as requested (0.2cm) -->
+    <line x1="-213" y1="-22" x2="-133" y2="-22" stroke="#FFFFFF" stroke-width="10" class="glA"/>
+    <line x1="133" y1="-22" x2="213" y2="-22" stroke="#FFFFFF" stroke-width="10" class="glB"/>
+  </g>
+</g>
+
+<!-- desc text -->
+<g transform="translate(400, 150)">
+  <text text-anchor="middle" font-family="monospace" font-size="16" fill="#FF0055" letter-spacing="2">BDIA @ ENSA · ALWAYS EXTRA</text>
+</g>
+
+<!-- decorative corners -->
+<polyline points="20,20 20,40 40,40" fill="none" stroke="#FF0055" stroke-width="1.5" opacity="0.6"/>
+<polyline points="780,20 780,40 760,40" fill="none" stroke="#FF0055" stroke-width="1.5" opacity="0.6"/>
+<polyline points="20,180 20,160 40,160" fill="none" stroke="#FF0055" stroke-width="1.5" opacity="0.6"/>
+<polyline points="780,180 780,160 760,160" fill="none" stroke="#FF0055" stroke-width="1.5" opacity="0.6"/>
+
+</svg>

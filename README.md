@@ -1,6 +1,6 @@
 <div align="center">
  
-<h1><img src="https://capsule-render.vercel.app/api?type=glitch&color=0:000000,100:FF0055&height=200&section=header&text=UN-GLITCHED&fontSize=70&fontColor=ffffff&animation=glitch&fontAlignY=55&desc=BDIA%20%40%20ENSA%20·%20ERR_IDENTITY_LOADING&descSize=16&descAlignY=75&descAlign=50"/></h1>
+<h1><img src="./header.svg" width="800"/></h1>
  
 ### `BDIA @ ENSA · Not here to fit in · Here to build what doesn't exist yet · Simple sucks. Always extra.`
  
