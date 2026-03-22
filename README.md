@@ -2,7 +2,7 @@
  
 <h1><img src="./header.svg" width="800"/></h1>
  
-### `BDIA @ ENSA · Not here to fit in · Here to build what doesn't exist yet · Simple sucks. Always extra.`
+### `Not here to fit in · Here to build what doesn't exist yet · Simple sucks. Always extra.`
  
  ---
  
