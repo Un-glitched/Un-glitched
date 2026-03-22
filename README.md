@@ -59,13 +59,17 @@
  
 </div>
  
----
+<div align="center">
  
 ## STATS — IF NUMBERS COULD SCREAM
  
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Un-glitched&show_icons=true&theme=dark&title_color=FF0055&icon_color=FF0055&text_color=ffffff&bg_color=000000&border_color=FF0055)
+<br>
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Un-glitched&layout=compact&theme=dark&title_color=FF0055&text_color=ffffff&bg_color=000000&border_color=FF0055)
+<br>
 ![GitHub Streak](https://streak-stats.demolab.com?user=Un-glitched&theme=dark&background=000000&border=FF0055&ring=FF0055&fire=FF0055&currStreakLabel=FF0055)
+ 
+</div>
  
 ---
  
