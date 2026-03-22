@@ -1,0 +1,150 @@
+<svg width="800" height="320" viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>
+    @keyframes glitch1{0%,94%,100%{transform:translate(0,0)}95%{transform:translate(-8px,0)}97%{transform:translate(6px,0)}}
+    @keyframes glitch2{0%,87%,100%{transform:translate(0,0)}88%{transform:translate(8px,0)}90%{transform:translate(-5px,0)}}
+    @keyframes flicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:0.2}94%{opacity:1}97%{opacity:0.5}98%{opacity:1}}
+    @keyframes scanline{0%{transform:translateY(-320px)}100%{transform:translateY(640px)}}
+    @keyframes dotblink1{0%,100%{opacity:1}45%{opacity:1}50%{opacity:0}55%{opacity:1}}
+    @keyframes dotblink2{0%,100%{opacity:1}55%{opacity:1}60%{opacity:0}65%{opacity:1}}
+    @keyframes dotblink3{0%,100%{opacity:1}65%{opacity:1}70%{opacity:0}75%{opacity:1}}
+    @keyframes dotglitch{0%,89%,100%{transform:translate(0,0)}90%{transform:translate(-4px,1px)}93%{transform:translate(4px,-1px)}96%{transform:translate(-2px,0)}}
+    @keyframes fastGlitch1{0%{opacity:0;transform:translate(-18px,0)}3%{opacity:1;transform:translate(10px,0)}5%{opacity:0.5;transform:translate(-6px,0)}7%,100%{opacity:1;transform:translate(0,0)}}
+    @keyframes fastGlitch2{0%,12%{opacity:0}15%{opacity:1;transform:translate(16px,0)}17%{opacity:0.5;transform:translate(-8px,0)}19%,100%{opacity:1;transform:translate(0,0)}}
+    @keyframes fastGlitch3{0%,24%{opacity:0}27%{opacity:1;transform:translate(-14px,0)}29%{opacity:0.5;transform:translate(9px,0)}31%,100%{opacity:1;transform:translate(0,0)}}
+    @keyframes fastGlitch4{0%,36%{opacity:0}39%{opacity:1;transform:translate(12px,0)}41%{opacity:0.5;transform:translate(-7px,0)}43%,100%{opacity:1;transform:translate(0,0)}}
+    @keyframes fastGlitch5{0%,48%{opacity:0}51%{opacity:1;transform:translate(-16px,0)}53%{opacity:0.5;transform:translate(10px,0)}55%,100%{opacity:1;transform:translate(0,0)}}
+    @keyframes rowglitch{0%,91%,100%{transform:translate(0,0)}92%{transform:translate(-6px,0)}94%{transform:translate(5px,0)}96%{transform:translate(-2px,0)}98%{transform:translate(0,0)}}
+    .glA{animation:glitch1 5s infinite}
+    .glB{animation:glitch2 7s infinite}
+    .flicker{animation:flicker 6s infinite}
+    .scan{animation:scanline 4s linear infinite}
+    .dg{animation:dotglitch 4s infinite}
+  </style>
+</defs>
+
+<rect width="800" height="320" fill="#060606"/>
+<g opacity="0.03" stroke="#ff0055" stroke-width="0.5">
+  <line x1="0" y1="64" x2="800" y2="64"/><line x1="0" y1="128" x2="800" y2="128"/>
+  <line x1="0" y1="192" x2="800" y2="192"/><line x1="0" y1="256" x2="800" y2="256"/>
+  <line x1="200" y1="0" x2="200" y2="320"/><line x1="500" y1="0" x2="500" y2="320"/>
+  <line x1="650" y1="0" x2="650" y2="320"/>
+</g>
+<rect class="scan" x="0" y="0" width="800" height="50" fill="#ff0055" opacity="0.03"/>
+
+<!-- title -->
+<text x="400" y="22" font-family="monospace" font-size="9" fill="#222" text-anchor="middle" letter-spacing="4">// CURRENT_FOCUS //</text>
+<line x1="40" y1="30" x2="760" y2="30" stroke="#1a1a1a" stroke-width="0.5"/>
+
+<!-- column headers -->
+<text x="40" y="50" font-family="monospace" font-size="9" fill="#ff0055" letter-spacing="2">SKILL</text>
+<text x="500" y="50" font-family="monospace" font-size="9" fill="#ff0055" letter-spacing="2">LEVEL</text>
+<text x="660" y="50" font-family="monospace" font-size="9" fill="#ff0055" letter-spacing="2">STATUS</text>
+<line x1="40" y1="58" x2="760" y2="58" stroke="#1f1f1f" stroke-width="0.5"/>
+
+<!-- ROW 1: Full-Stack -->
+<g style="animation:fastGlitch1 7s ease both">
+  <g class="glB" opacity="0.4"><text x="42" y="88" font-family="monospace" font-size="13" font-weight="700" fill="#00ffff">Full-Stack Web Dev</text></g>
+  <g class="glA" opacity="0.4"><text x="42" y="88" font-family="monospace" font-size="13" font-weight="700" fill="#ff0055">Full-Stack Web Dev</text></g>
+  <text x="40" y="88" font-family="monospace" font-size="13" font-weight="700" fill="#fff" class="flicker">Full-Stack Web Dev</text>
+  <!-- 7 filled dots, 3 empty -->
+  <g class="dg">
+    <circle cx="500" cy="82" r="5" fill="#ff0055"/><circle cx="516" cy="82" r="5" fill="#ff0055"/>
+    <circle cx="532" cy="82" r="5" fill="#ff0055"/><circle cx="548" cy="82" r="5" fill="#ff0055"/>
+    <circle cx="564" cy="82" r="5" fill="#ff0055"/><circle cx="580" cy="82" r="5" fill="#ff0055"/>
+    <circle cx="596" cy="82" r="5" fill="#ff0055"/>
+    <circle cx="612" cy="82" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="628" cy="82" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="644" cy="82" r="5" fill="none" stroke="#333" stroke-width="1"/>
+  </g>
+  <text x="660" y="88" font-family="monospace" font-size="10" fill="#ff0055">BUILDING</text>
+  <line x1="40" y1="98" x2="760" y2="98" stroke="#1a1a1a" stroke-width="0.5"/>
+</g>
+
+<!-- ROW 2: Data Science -->
+<g style="animation:fastGlitch2 7s ease both">
+  <g class="glB" opacity="0.4"><text x="42" y="128" font-family="monospace" font-size="13" font-weight="700" fill="#00ffff">Data Science</text></g>
+  <g class="glA" opacity="0.4"><text x="42" y="128" font-family="monospace" font-size="13" font-weight="700" fill="#ff0055">Data Science</text></g>
+  <text x="40" y="128" font-family="monospace" font-size="13" font-weight="700" fill="#fff" class="flicker">Data Science</text>
+  <g class="dg">
+    <circle cx="500" cy="122" r="5" fill="#ff0055"/><circle cx="516" cy="122" r="5" fill="#ff0055"/>
+    <circle cx="532" cy="122" r="5" fill="#ff0055"/><circle cx="548" cy="122" r="5" fill="#ff0055"/>
+    <circle cx="564" cy="122" r="5" fill="#ff0055"/>
+    <circle cx="580" cy="122" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="596" cy="122" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="612" cy="122" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="628" cy="122" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="644" cy="122" r="5" fill="none" stroke="#333" stroke-width="1"/>
+  </g>
+  <text x="660" y="128" font-family="monospace" font-size="10" fill="#ff0055">EXPLORING</text>
+  <line x1="40" y1="138" x2="760" y2="138" stroke="#1a1a1a" stroke-width="0.5"/>
+</g>
+
+<!-- ROW 3: Machine Learning -->
+<g style="animation:fastGlitch3 7s ease both">
+  <g class="glB" opacity="0.4"><text x="42" y="168" font-family="monospace" font-size="13" font-weight="700" fill="#00ffff">Machine Learning</text></g>
+  <g class="glA" opacity="0.4"><text x="42" y="168" font-family="monospace" font-size="13" font-weight="700" fill="#ff0055">Machine Learning</text></g>
+  <text x="40" y="168" font-family="monospace" font-size="13" font-weight="700" fill="#fff" class="flicker">Machine Learning</text>
+  <g class="dg">
+    <circle cx="500" cy="162" r="5" fill="#ff0055"/><circle cx="516" cy="162" r="5" fill="#ff0055"/>
+    <circle cx="532" cy="162" r="5" fill="#ff0055"/>
+    <circle cx="548" cy="162" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="564" cy="162" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="580" cy="162" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="596" cy="162" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="612" cy="162" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="628" cy="162" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="644" cy="162" r="5" fill="none" stroke="#333" stroke-width="1"/>
+  </g>
+  <text x="660" y="168" font-family="monospace" font-size="10" fill="#ff0055">LEARNING</text>
+  <line x1="40" y1="178" x2="760" y2="178" stroke="#1a1a1a" stroke-width="0.5"/>
+</g>
+
+<!-- ROW 4: 3D Design -->
+<g style="animation:fastGlitch4 7s ease both">
+  <g class="glB" opacity="0.4"><text x="42" y="208" font-family="monospace" font-size="13" font-weight="700" fill="#00ffff">3D Design</text></g>
+  <g class="glA" opacity="0.4"><text x="42" y="208" font-family="monospace" font-size="13" font-weight="700" fill="#ff0055">3D Design</text></g>
+  <text x="40" y="208" font-family="monospace" font-size="13" font-weight="700" fill="#fff" class="flicker">3D Design</text>
+  <g class="dg">
+    <circle cx="500" cy="202" r="5" fill="#ff0055"/><circle cx="516" cy="202" r="5" fill="#ff0055"/>
+    <circle cx="532" cy="202" r="5" fill="#ff0055"/><circle cx="548" cy="202" r="5" fill="#ff0055"/>
+    <circle cx="564" cy="202" r="5" fill="#ff0055"/><circle cx="580" cy="202" r="5" fill="#ff0055"/>
+    <circle cx="596" cy="202" r="5" fill="#ff0055"/><circle cx="612" cy="202" r="5" fill="#ff0055"/>
+    <circle cx="628" cy="202" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="644" cy="202" r="5" fill="none" stroke="#333" stroke-width="1"/>
+  </g>
+  <text x="660" y="208" font-family="monospace" font-size="10" fill="#ff0055">CREATING</text>
+  <line x1="40" y1="218" x2="760" y2="218" stroke="#1a1a1a" stroke-width="0.5"/>
+</g>
+
+<!-- ROW 5: Cybersecurity -->
+<g style="animation:fastGlitch5 7s ease both">
+  <g class="glB" opacity="0.4"><text x="42" y="248" font-family="monospace" font-size="13" font-weight="700" fill="#00ffff">Cybersecurity</text></g>
+  <g class="glA" opacity="0.4"><text x="42" y="248" font-family="monospace" font-size="13" font-weight="700" fill="#ff0055">Cybersecurity</text></g>
+  <text x="40" y="248" font-family="monospace" font-size="13" font-weight="700" fill="#fff" class="flicker">Cybersecurity</text>
+  <g class="dg">
+    <circle cx="500" cy="242" r="5" fill="#ff0055"/><circle cx="516" cy="242" r="5" fill="#ff0055"/>
+    <circle cx="532" cy="242" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="548" cy="242" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="564" cy="242" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="580" cy="242" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="596" cy="242" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="612" cy="242" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="628" cy="242" r="5" fill="none" stroke="#333" stroke-width="1"/>
+    <circle cx="644" cy="242" r="5" fill="none" stroke="#333" stroke-width="1"/>
+  </g>
+  <text x="660" y="248" font-family="monospace" font-size="10" fill="#ff0055">CURIOUS</text>
+  <line x1="40" y1="258" x2="760" y2="258" stroke="#1a1a1a" stroke-width="0.5"/>
+</g>
+
+<!-- bottom status -->
+<text x="40" y="290" font-family="monospace" font-size="9" fill="#2a2a2a">$ status :: 0xDEAD::CORRUPT? NO. STILL COMPILING...</text>
+<text x="40" y="308" font-family="monospace" font-size="9" fill="#222">$ next_target :: Deep Learning · Computer Vision · Systems Programming</text>
+
+<!-- corners -->
+<polyline points="20,10 20,30 40,30" fill="none" stroke="#ff0055" stroke-width="1.5" opacity="0.6"/>
+<polyline points="780,10 780,30 760,30" fill="none" stroke="#ff0055" stroke-width="1.5" opacity="0.6"/>
+<polyline points="20,310 20,290 40,290" fill="none" stroke="#ff0055" stroke-width="1.5" opacity="0.6"/>
+<polyline points="780,310 780,290 760,290" fill="none" stroke="#ff0055" stroke-width="1.5" opacity="0.6"/>
+
+</svg>

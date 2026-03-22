@@ -1,0 +1,91 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>
+    @keyframes blink{0%,100%{opacity:1}49%{opacity:1}50%{opacity:0}99%{opacity:0}}
+    @keyframes glitch1{0%,94%,100%{transform:translate(0,0)}95%{transform:translate(-8px,0)}97%{transform:translate(6px,0)}99%{transform:translate(0,0)}}
+    @keyframes glitch2{0%,87%,100%{transform:translate(0,0);opacity:1}88%{transform:translate(8px,0);opacity:0.7}90%{transform:translate(-5px,0);opacity:0.8}92%{transform:translate(0,0);opacity:1}}
+    @keyframes scanline{0%{transform:translateY(-450px)}100%{transform:translateY(900px)}}
+    @keyframes flicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:0.4}94%{opacity:1}96%{opacity:0.6}97%{opacity:1}}
+    @keyframes fastGlitch1{0%{opacity:0;transform:translate(-18px,0)}3%{opacity:1;transform:translate(10px,0)}5%{opacity:0.5;transform:translate(-6px,0)}7%{opacity:1;transform:translate(3px,0)}9%,100%{opacity:1;transform:translate(0,0)}}
+    @keyframes fastGlitch2{0%,12%{opacity:0;transform:translate(0,0)}15%{opacity:1;transform:translate(16px,0)}17%{opacity:0.5;transform:translate(-8px,0)}19%{opacity:1;transform:translate(4px,0)}21%,100%{opacity:1;transform:translate(0,0)}}
+    @keyframes fastGlitch3{0%,24%{opacity:0;transform:translate(0,0)}27%{opacity:1;transform:translate(-14px,0)}29%{opacity:0.5;transform:translate(9px,0)}31%{opacity:1;transform:translate(-3px,0)}33%,100%{opacity:1;transform:translate(0,0)}}
+    @keyframes fastGlitch4{0%,36%{opacity:0;transform:translate(0,0)}39%{opacity:1;transform:translate(12px,0)}41%{opacity:0.5;transform:translate(-7px,0)}43%{opacity:1;transform:translate(2px,0)}45%,100%{opacity:1;transform:translate(0,0)}}
+    @keyframes fastGlitch5{0%,48%{opacity:0;transform:translate(0,0)}51%{opacity:1;transform:translate(-16px,0)}53%{opacity:0.5;transform:translate(10px,0)}55%{opacity:1;transform:translate(-4px,0)}57%,100%{opacity:1;transform:translate(0,0)}}
+    @keyframes fastGlitch6{0%,60%{opacity:0;transform:translate(0,0)}63%{opacity:1;transform:translate(14px,0)}65%{opacity:0.5;transform:translate(-8px,0)}67%{opacity:1;transform:translate(3px,0)}69%,100%{opacity:1;transform:translate(0,0)}}
+    .flicker{animation:flicker 6s infinite}
+    .scan{animation:scanline 4s linear infinite}
+    .glA{animation:glitch1 5s infinite}
+    .glB{animation:glitch2 7s infinite}
+  </style>
+</defs>
+
+<rect width="800" height="450" fill="#060606"/>
+<g opacity="0.03" stroke="#ff0055" stroke-width="0.5">
+  <line x1="0" y1="90" x2="800" y2="90"/><line x1="0" y1="180" x2="800" y2="180"/>
+  <line x1="0" y1="270" x2="800" y2="270"/><line x1="0" y1="360" x2="800" y2="360"/>
+  <line x1="160" y1="0" x2="160" y2="450"/><line x1="320" y1="0" x2="320" y2="450"/>
+  <line x1="480" y1="0" x2="480" y2="450"/><line x1="640" y1="0" x2="640" y2="450"/>
+</g>
+<rect class="scan" x="0" y="0" width="800" height="80" fill="#ff0055" opacity="0.03"/>
+
+<text x="400" y="22" font-family="monospace" font-size="9" fill="#222" text-anchor="middle" letter-spacing="4">// IDENTITY_FILE_v2.1 //</text>
+
+<!-- BIG GLITCH LEFT -->
+<g class="glB" opacity="0.5"><text x="62" y="140" font-family="monospace" font-size="80" font-weight="900" fill="#00ffff" letter-spacing="-4">GL</text></g>
+<g class="glA" opacity="0.5"><text x="62" y="140" font-family="monospace" font-size="80" font-weight="900" fill="#ff0055" letter-spacing="-4">GL</text></g>
+<text x="60" y="140" font-family="monospace" font-size="80" font-weight="900" fill="#fff" letter-spacing="-4" class="flicker">GL</text>
+
+<g class="glB" opacity="0.5"><text x="62" y="228" font-family="monospace" font-size="80" font-weight="900" fill="#00ffff" letter-spacing="-4">ITCH</text></g>
+<g class="glA" opacity="0.5"><text x="62" y="228" font-family="monospace" font-size="80" font-weight="900" fill="#ff0055" letter-spacing="-4">ITCH</text></g>
+<text x="60" y="228" font-family="monospace" font-size="80" font-weight="900" fill="#fff" letter-spacing="-4" class="flicker">ITCH</text>
+
+<!-- MOTTO under GLITCH -->
+<text x="60" y="270" font-family="monospace" font-size="10" fill="#ff0055" letter-spacing="2">MOTTO</text>
+<text x="60" y="288" font-family="monospace" font-size="9" fill="#666">"The most formidable instrument of change</text>
+<text x="60" y="302" font-family="monospace" font-size="9" fill="#666"> is the person's mind, everything else</text>
+<text x="60" y="316" font-family="monospace" font-size="9" fill="#666"> is just an accessory."</text>
+
+<!-- vertical separator -->
+<line x1="390" y1="35" x2="390" y2="425" stroke="#ff0055" stroke-width="1" opacity="0.5"/>
+
+<!-- RIGHT SIDE - evenly spaced, gap=58px between blocks -->
+<!-- IDENTITY y=55 -->
+<text style="animation:fastGlitch1 7s ease both" x="415" y="55" font-family="monospace" font-size="9" fill="#ff0055" letter-spacing="3">IDENTITY</text>
+<text style="animation:fastGlitch1 7s ease both" x="415" y="73" font-family="monospace" font-size="13" font-weight="700" fill="#fff">BDIA STUDENT @ ENSATE</text>
+<line style="animation:fastGlitch1 7s ease both" x1="415" y1="82" x2="760" y2="82" stroke="#1f1f1f" stroke-width="0.5"/>
+
+<!-- ALIAS y=100 -->
+<text style="animation:fastGlitch2 7s ease both" x="415" y="100" font-family="monospace" font-size="9" fill="#ff0055" letter-spacing="3">ALIAS</text>
+<text style="animation:fastGlitch2 7s ease both" x="415" y="118" font-family="monospace" font-size="13" font-weight="700" fill="#fff">GLITCHED</text>
+<line style="animation:fastGlitch2 7s ease both" x1="415" y1="127" x2="760" y2="127" stroke="#1f1f1f" stroke-width="0.5"/>
+
+<!-- STATUS y=145 -->
+<text style="animation:fastGlitch3 7s ease both" x="415" y="145" font-family="monospace" font-size="9" fill="#ff0055" letter-spacing="3">STATUS</text>
+<text style="animation:fastGlitch3 7s ease both" x="415" y="163" font-family="monospace" font-size="13" font-weight="700" fill="#fff">OVERCLOCKING BRAIN...</text>
+<line style="animation:fastGlitch3 7s ease both" x1="415" y1="172" x2="760" y2="172" stroke="#1f1f1f" stroke-width="0.5"/>
+
+<!-- MINDSET y=190 -->
+<text style="animation:fastGlitch4 7s ease both" x="415" y="190" font-family="monospace" font-size="9" fill="#ff0055" letter-spacing="3">MINDSET</text>
+<text style="animation:fastGlitch4 7s ease both" x="415" y="208" font-family="monospace" font-size="11" font-weight="700" fill="#fff">SIMPLE SUCKS. ALWAYS EXTRA.</text>
+<line style="animation:fastGlitch4 7s ease both" x1="415" y1="217" x2="760" y2="217" stroke="#1f1f1f" stroke-width="0.5"/>
+
+<!-- INTERESTS y=235 -->
+<text style="animation:fastGlitch5 7s ease both" x="415" y="235" font-family="monospace" font-size="9" fill="#ff0055" letter-spacing="3">INTERESTS</text>
+<text style="animation:fastGlitch5 7s ease both" x="415" y="253" font-family="monospace" font-size="11" font-weight="700" fill="#fff">AI · DATA · FULLSTACK · 3D · CYBERSEC</text>
+<line style="animation:fastGlitch5 7s ease both" x1="415" y1="262" x2="760" y2="262" stroke="#1f1f1f" stroke-width="0.5"/>
+
+<!-- WHAT I DO y=280 -->
+<text style="animation:fastGlitch6 7s ease both" x="415" y="280" font-family="monospace" font-size="9" fill="#ff0055" letter-spacing="3">WHAT I DO</text>
+<text style="animation:fastGlitch6 7s ease both" x="415" y="298" font-family="monospace" font-size="10" font-weight="700" fill="#fff">↳ Teaching machines to think</text>
+<text style="animation:fastGlitch6 7s ease both" x="415" y="314" font-family="monospace" font-size="10" font-weight="700" fill="#fff">↳ Building what doesn't exist yet</text>
+<text style="animation:fastGlitch6 7s ease both" x="415" y="330" font-family="monospace" font-size="10" font-weight="700" fill="#fff">↳ Designing in 3D while code compiles</text>
+<text style="animation:fastGlitch6 7s ease both" x="415" y="346" font-family="monospace" font-size="10" font-weight="700" fill="#fff">↳ Breaking systems to understand them</text>
+<line style="animation:fastGlitch6 7s ease both" x1="415" y1="355" x2="760" y2="355" stroke="#1f1f1f" stroke-width="0.5"/>
+
+<!-- corners -->
+<polyline points="20,20 20,40 40,40" fill="none" stroke="#ff0055" stroke-width="1.5" opacity="0.6"/>
+<polyline points="780,20 780,40 760,40" fill="none" stroke="#ff0055" stroke-width="1.5" opacity="0.6"/>
+<polyline points="20,430 20,410 40,410" fill="none" stroke="#ff0055" stroke-width="1.5" opacity="0.6"/>
+<polyline points="780,430 780,410 760,410" fill="none" stroke="#ff0055" stroke-width="1.5" opacity="0.6"/>
+
+</svg>

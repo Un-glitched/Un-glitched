@@ -1,0 +1,102 @@
+<svg width="800" height="310" viewBox="0 0 800 310" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>
+    @keyframes scanline{0%{transform:translateY(-400px)}100%{transform:translateY(800px)}}
+    @keyframes flicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:0.1}94%{opacity:1}97%{opacity:0.4}98%{opacity:1}}
+    @keyframes signal1{0%,100%{opacity:1;transform:translate(0,0)}45%{opacity:1}50%{opacity:0.3;transform:translate(-3px,0)}55%{opacity:1;transform:translate(0,0)}}
+    @keyframes signal2{0%,100%{opacity:1;transform:translate(0,0)}35%{opacity:1}40%{opacity:0.3;transform:translate(4px,0)}45%{opacity:1;transform:translate(0,0)}}
+    @keyframes signal3{0%,100%{opacity:1;transform:translate(0,0)}60%{opacity:1}65%{opacity:0.3;transform:translate(-5px,0)}70%{opacity:1;transform:translate(0,0)}}
+    @keyframes signal4{0%,100%{opacity:1;transform:translate(0,0)}20%{opacity:1}25%{opacity:0.2;transform:translate(3px,0)}30%{opacity:1;transform:translate(0,0)}}
+    @keyframes signal5{0%,100%{opacity:1;transform:translate(0,0)}75%{opacity:1}80%{opacity:0.3;transform:translate(-4px,0)}85%{opacity:1;transform:translate(0,0)}}
+    @keyframes glitch1{0%,94%,100%{transform:translate(0,0)}95%{transform:translate(-8px,0)}97%{transform:translate(6px,0)}}
+    @keyframes glitch2{0%,87%,100%{transform:translate(0,0)}88%{transform:translate(8px,0)}90%{transform:translate(-5px,0)}}
+    @keyframes errflicker{0%,100%{opacity:0.4}45%{opacity:0.4}50%{opacity:0.8}55%{opacity:0.4}80%{opacity:0.4}85%{opacity:0.1}90%{opacity:0.4}}
+    .scan{animation:scanline 3s linear infinite}
+    .glA{animation:glitch1 5s infinite}
+    .glB{animation:glitch2 7s infinite}
+  </style>
+</defs>
+
+<rect width="800" height="310" fill="#060606"/>
+
+<!-- scanlines texture -->
+<g opacity="0.04">
+  <rect x="0" y="0" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="4" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="8" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="12" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="16" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="20" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="24" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="28" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="32" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="36" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="40" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="44" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="48" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="52" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="56" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="60" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="64" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="68" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="72" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="76" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="80" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="84" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="88" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="92" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="96" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="100" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="200" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="300" width="800" height="1" fill="#ff0055"/>
+  <rect x="0" y="400" width="800" height="1" fill="#ff0055"/>
+</g>
+
+<!-- moving scanline sweep -->
+<rect class="scan" x="0" y="0" width="800" height="60" fill="#ff0055" opacity="0.04"/>
+
+<!-- QUOTE 1 - Glitch -->
+<g style="animation:signal1 4s ease-in-out infinite">
+  <g class="glA" opacity="0.4"><text x="42" y="52" font-family="monospace" font-size="11" fill="#ff0055">"Simple sucks. Always extra."</text></g>
+  <g class="glB" opacity="0.3"><text x="42" y="52" font-family="monospace" font-size="11" fill="#00ffff">"Simple sucks. Always extra."</text></g>
+  <text x="40" y="52" font-family="monospace" font-size="11" fill="#aaa">"Simple sucks. Always extra." <tspan fill="#ff0055" font-size="9">— Glitch</tspan></text>
+</g>
+<line x1="40" y1="78" x2="760" y2="78" stroke="#1a1a1a" stroke-width="0.5"/>
+
+<!-- QUOTE 2 - Tesla 1 -->
+<g style="animation:signal2 5s ease-in-out infinite">
+  <g class="glB" opacity="0.4"><text x="42" y="108" font-family="monospace" font-size="11" fill="#ff0055">"Our virtues and our failings are inseparable, like force and matter.</text></g>
+  <g class="glA" opacity="0.3"><text x="42" y="108" font-family="monospace" font-size="11" fill="#00ffff">"Our virtues and our failings are inseparable, like force and matter.</text></g>
+  <text x="40" y="108" font-family="monospace" font-size="11" fill="#aaa">"Our virtues and our failings are inseparable, like force and matter.</text>
+  <text x="40" y="124" font-family="monospace" font-size="11" fill="#aaa"> When they separate, man is no more." <tspan fill="#ff0055" font-size="9">— Nikola Tesla</tspan></text>
+</g>
+<line x1="40" y1="150" x2="760" y2="150" stroke="#1a1a1a" stroke-width="0.5"/>
+
+
+
+<!-- QUOTE 4 - Einstein -->
+<g style="animation:signal4 4.5s ease-in-out infinite">
+  <g class="glB" opacity="0.4"><text x="42" y="178" font-family="monospace" font-size="11" fill="#ff0055">"The more I learn, the more I realize how much I don't know."</text></g>
+  <g class="glA" opacity="0.3"><text x="42" y="178" font-family="monospace" font-size="11" fill="#00ffff">"The more I learn, the more I realize how much I don't know."</text></g>
+  <text x="40" y="178" font-family="monospace" font-size="11" fill="#aaa">"The more I learn, the more I realize how much I don't know." <tspan fill="#ff0055" font-size="9">— Albert Einstein</tspan></text>
+</g>
+<line x1="40" y1="210" x2="760" y2="210" stroke="#1a1a1a" stroke-width="0.5"/>
+
+<!-- QUOTE 5 - Glitch -->
+<g style="animation:signal5 5.5s ease-in-out infinite">
+  <g class="glA" opacity="0.4"><text x="42" y="232" font-family="monospace" font-size="11" fill="#ff0055">"Corrupted by curiosity. Rebuilt by code."</text></g>
+  <g class="glB" opacity="0.3"><text x="42" y="232" font-family="monospace" font-size="11" fill="#00ffff">"Corrupted by curiosity. Rebuilt by code."</text></g>
+  <text x="40" y="232" font-family="monospace" font-size="11" fill="#aaa">"Corrupted by curiosity. Rebuilt by code." <tspan fill="#ff0055" font-size="9">— Glitch</tspan></text>
+</g>
+<line x1="40" y1="264" x2="760" y2="264" stroke="#1a1a1a" stroke-width="0.5"/>
+
+<!-- bottom err -->
+<text x="40" y="290" font-family="monospace" font-size="9" fill="#222" style="animation:errflicker 3s infinite">ERR_SIGNAL_UNSTABLE :: RETRANSMITTING...</text>
+
+<!-- corners -->
+<polyline points="20,10 20,30 40,30" fill="none" stroke="#ff0055" stroke-width="1.5" opacity="0.6"/>
+<polyline points="780,10 780,30 760,30" fill="none" stroke="#ff0055" stroke-width="1.5" opacity="0.6"/>
+<polyline points="20,300 20,280 40,280" fill="none" stroke="#ff0055" stroke-width="1.5" opacity="0.6"/>
+<polyline points="780,300 780,280 760,280" fill="none" stroke="#ff0055" stroke-width="1.5" opacity="0.6"/>
+
+</svg>
