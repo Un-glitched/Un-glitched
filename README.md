@@ -87,7 +87,7 @@
  
 <div align="center">
  
-## Inspiration
+## INSPIRATION
 
 
 <img src="./inspiration.svg" width="800"/>
