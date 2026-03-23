@@ -98,7 +98,7 @@
 ## FIND ME
  
 [![GitHub](https://img.shields.io/badge/Un--glitched-%23FF0055?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Un-glitched)
-[![LinkedIn](https://img.shields.io/badge/glitchedme-%23FF0055?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/glitchedme)
+[![LinkedIn](https://img.shields.io/badge/glitchedme-%23FF0055?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/Un-glitched)
  
 ---
 
