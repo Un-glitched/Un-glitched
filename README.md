@@ -61,7 +61,7 @@
  
 <div align="center">
  
-## STATS — IF NUMBERS COULD SCREAM
+## STATS 
  
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Un-glitched&show_icons=true&theme=dark&title_color=FF0055&icon_color=FF0055&text_color=ffffff&bg_color=000000&border_color=FF0055)
 <br>
@@ -97,10 +97,10 @@
  
 ## FIND ME
  
-[![GitHub](https://img.shields.io/badge/GitHub-Un--glitched-000000?style=for-the-badge&logo=github&logoColor=FF0055)](https://github.com/Un-glitched)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Glitchedme-000000?style=for-the-badge&logo=linkedin&logoColor=FF0055)](https://www.linkedin.com/in/Glitchedme)
+[![GitHub](https://img.shields.io/badge/Un--glitched-%23FF0055?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Un-glitched)
+[![LinkedIn](https://img.shields.io/badge/glitchedme-%23FF0055?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/glitchedme)
  
 ---
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=Un-glitched&left_color=black&right_color=red)
+
  
 </div>
