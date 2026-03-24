@@ -20,9 +20,8 @@
 ![glitch](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=13&duration=200&pause=80&color=FFFFFF&background=FF0055&center=true&vCenter=true&width=160&height=28&lines=ERR0R;-9999999999;0xDEAD-BFFFF;NULL-0000;%25%25%23%23-99-XXXX)
 
 </div
-
 ---
-
+---
 </div>
  
 <div align="center">
