@@ -21,11 +21,7 @@
 
 </div
 
-
-
 ---
-
-
 
 </div>
  
@@ -34,7 +30,6 @@
 ## WHO AM I
 
 <img src="./identity.svg" width="800"/>
-
 
 ---
 
