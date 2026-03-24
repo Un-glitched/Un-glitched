@@ -16,14 +16,12 @@
  
 ---
 
- 
-</div>
+ <div align="center">
 
-<div align="center">
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=Un-glitched&left_color=%230a0a0a&right_color=%23FF0055&left_text=VISITORS)
 ![glitch](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=13&duration=200&pause=80&color=FFFFFF&background=FF0055&center=true&vCenter=true&width=160&height=28&lines=ERR0R;-9999999999;0xDEAD-BFFFF;NULL-0000;%25%25%23%23-99-XXXX)
 
-</div>
+</div>>
 
 
 
