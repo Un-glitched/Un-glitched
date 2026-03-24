@@ -5,15 +5,19 @@
 ### `Not here to fit in · Here to build what doesn't exist yet · Simple sucks. Always extra.`
  
  ---
+
+ 
 <div align="center">
  
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=FF0055&center=true&vCenter=true&width=600&lines=AI+%26+Data+Science+Engineer+in+progress...;Full-Stack+Developer;3D+Designer;Corrupted+by+curiosity.+Rebuilt+by+code.)
+
+ </div>
+
  
+---
 
  
 </div>
----
-
 
 <div align="center">
 
@@ -21,7 +25,11 @@
 
 </div>
 
+
+
 ---
+
+
 
 </div>
  
@@ -33,6 +41,7 @@
 
 
 ---
+
 </div>
  
 <div align="center">
