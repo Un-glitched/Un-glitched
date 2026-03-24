@@ -17,7 +17,7 @@
 <div align="center">
 
 ![visitors](https://img.shields.io/badge/V_I_S_I_T_O_R_S-%23000000?style=for-the-badge&logo=target&logoColor=FF0055&labelColor=000000)
-![glitch](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=13&duration=200&pause=80&color=FFFFFF&background=FF0055&center=true&vCenter=true&width=160&height=28&lines=ERR0R;-9999999999;0xDEAD-BFFFF;NULL-0000;%25%25%23%23-99-XXXX)
+![visitors](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=14&duration=300&pause=100&color=FF0055&background=0A0A0A¢er=true&vCenter=true&multiline=false&random=true&width=120&height=28&lines=ERR0R;%E2%88%9E;-9999;%E2%96%88%E2%96%88%E2%96%88;0xDEAD;1010;-1;%3F%3F%3F%3F;NULL;%E2%88%9E)
 
 </div>
 
