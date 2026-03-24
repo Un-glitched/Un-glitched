@@ -21,7 +21,12 @@
 
 <div align="center">
 
-![visitors](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=14&duration=300&pause=100&color=FF0055&background=0A0A0A&center=true&vCenter=true&multiline=false&random=true&width=120&height=28&lines=ERR0R;%E2%88%9E;-9999;%E2%96%88%E2%96%88%E2%96%88;0xDEAD;1010;-1;%3F%3F%3F%3F;NULL;%E2%88%9E)
+
+
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=Un-glitched&left_color=%230a0a0a&right_color=%23FF0055&left_text=VISITORS)
+
+
+![glitch](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=13&duration=200&pause=80&color=FFFFFF&background=FF0055&center=true&vCenter=true&width=160&height=28&lines=ERR0R;-9999999999;0xDEAD-BFFFF;NULL-0000;%25%25%23%23-99-XXXX)
 
 </div>
 
