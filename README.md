@@ -5,24 +5,21 @@
 ### `Not here to fit in · Here to build what doesn't exist yet · Simple sucks. Always extra.`
  
  ---
-
  
+</div>
+ 
+<div align="center">
+ 
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=FF0055&center=true&vCenter=true&width=600&lines=AI+%26+Data+Science+Engineer+in+progress...;Full-Stack+Developer;3D+Designer;Corrupted+by+curiosity.+Rebuilt+by+code.)
+ 
+---
+
 <div align="center">
 
 ![visitors](https://img.shields.io/badge/VISITORS-%23FF0055?style=for-the-badge&labelColor=0a0a0a)
 ![glitch](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=13&duration=200&pause=80&color=FFFFFF&background=FF0055&center=true&vCenter=true&width=160&height=28&lines=ERR0R;-9999999999;0xDEAD-BFFFF;NULL-0000;%25%25%23%23-99-XXXX)
 
-</div>
-
- 
----
-
- <div align="center">
-
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=Un-glitched&left_color=%230a0a0a&right_color=%23FF0055&left_text=VISITORS)
-![glitch](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=13&duration=200&pause=80&color=FFFFFF&background=FF0055&center=true&vCenter=true&width=160&height=28&lines=ERR0R;-9999999999;0xDEAD-BFFFF;NULL-0000;%25%25%23%23-99-XXXX)
-
-</div>>
+</div
 
 
 
