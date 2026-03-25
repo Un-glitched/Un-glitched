@@ -16,7 +16,7 @@
 
 <div align="center">
 
-![visitors](./assets/glitch_visitors(2).svg)
+![visitors](./assets/glitch_visitors.svg)
 
 </div>
 
