@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="28" viewBox="0 0 500 28">
+  <defs>
+    <pattern id="s" x="0" y="0" width="100%" height="4" patternUnits="userSpaceOnUse">
+      <rect width="100%" height="2" fill="none"/>
+      <rect y="2" width="100%" height="2" fill="rgba(0,0,0,0.15)"/>
+    </pattern>
+    <clipPath id="t-clip"><rect x="100" y="0" width="400" height="14"/></clipPath>
+    <clipPath id="b-clip"><rect x="100" y="14" width="400" height="14"/></clipPath>
+    <clipPath id="typing">
+      <rect x="110" y="0" height="28" width="0">
+        <animate attributeName="width" dur="20s" repeatCount="indefinite"
+          calcMode="discrete"
+          keyTimes="0;0.01;0.02;0.021;0.07;0.083;0.084;0.087;0.088;0.09;0.127;0.128;0.18;0.203;0.204;0.21;0.213;0.214;0.25;0.263;0.264;0.30;0.318;0.319;0.33;0.333;0.334;0.38;0.395;0.396;0.40;0.403;0.404;0.43;0.438;0.439;0.48;0.498;0.499;0.53;0.543;0.544;0.58;0.598;0.599;0.605;0.608;0.609;0.66;0.67;0.671;0.673;0.675;0.676;0.678;0.68;0.681;0.72;0.73;0.731;0.74;0.745;0.746;0.77;0.775;0.776;0.82;0.835;0.836;0.843;0.845;0.846;0.88;0.89;0.891;0.94;0.953;0.954;0.965;0.968;0.969;1"
+          values="0;400;400;0;400;400;0;400;400;0;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400;400;0;400"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect width="100" height="28" fill="#0a0a0a" rx="3"/>
+  <rect x="99" width="1" height="28" fill="rgba(255,255,255,0.04)"/>
+
+  <rect x="100" width="100" height="28" fill="#FF0055" rx="3">
+    <animate attributeName="width" dur="20s" repeatCount="indefinite" calcMode="discrete"
+      keyTimes="0;0.02;0.083;0.088;0.127;0.203;0.213;0.263;0.318;0.333;0.395;0.403;0.438;0.498;0.543;0.598;0.608;0.67;0.675;0.68;0.73;0.745;0.775;0.835;0.845;0.89;0.953;0.968;1"
+      values="100;100;100;100;100;100;100;100;100;100;390;100;100;100;100;100;100;100;390;100;100;100;100;100;100;100;100;100;390"/>
+    <animate attributeName="fill" dur="4s" repeatCount="indefinite"
+      values="#FF0055;#FF0055;#FF0055;#FF0055;#00FF41;#FF0055;#FF0055;#FF0055"
+      keyTimes="0;0.3;0.6;0.74;0.75;0.76;0.9;1"/>
+  </rect>
+
+  <rect x="100" width="400" height="28" fill="url(#s)" pointer-events="none"/>
+
+  <rect width="200" height="28" rx="3" fill="none" stroke="rgba(255,0,85,0.35)" stroke-width="0.5">
+    <animate attributeName="width" dur="20s" repeatCount="indefinite" calcMode="discrete"
+      keyTimes="0;0.02;0.083;0.088;0.127;0.203;0.213;0.263;0.318;0.333;0.395;0.403;0.438;0.498;0.543;0.598;0.608;0.67;0.675;0.68;0.73;0.745;0.775;0.835;0.845;0.89;0.953;0.968;1"
+      values="200;200;200;200;200;200;200;200;200;200;490;200;200;200;200;200;200;200;490;200;200;200;200;200;200;200;200;200;490"/>
+  </rect>
+
+  <text x="10" y="19" font-family="'Courier New',monospace" font-size="10" letter-spacing="2" fill="white" font-weight="bold">VISITORS</text>
+
+  <g clip-path="url(#typing)">
+    <g clip-path="url(#t-clip)">
+      <g font-family="'Courier New',monospace" font-size="13" font-weight="bold" fill="#00ffff">
+        <animate attributeName="opacity" dur="0.1s" values="0.7;0.15;0.7" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" dur="20s" repeatCount="indefinite" calcMode="discrete"
+          keyTimes="0;0.02;0.083;0.088;0.127;0.203;0.213;0.263;0.318;0.333;0.395;0.403;0.438;0.498;0.543;0.598;0.608;0.67;0.675;0.68;0.73;0.745;0.775;0.835;0.845;0.89;0.953;0.968;1"
+          values="108,19;108,-11;108,-41;108,-71;108,-101;108,-131;108,-161;108,-191;108,-221;108,-251;108,-281;108,-311;108,-341;108,-371;108,-401;108,-431;108,-461;108,-491;108,-521;108,-551;108,-581;108,-611;108,-641;108,-671;108,-701;108,-731;108,-761;108,-791;108,-821"/>
+        <text y="0">-9999</text><text y="30">1337</text><text y="60">0xDEAD</text><text y="90">-00001</text><text y="120">NULL-0000</text>
+        <text y="150">ERR0R</text><text y="180">3RR0R-X-4421</text><text y="210">%%##-99-XXXX</text><text y="240">0xDEAD-BFFFF</text><text y="270">-9999999999</text>
+        <text y="300">!SYSTEM_FAILURE_X_4421_9999999999!</text>
+        <text y="330">-9999</text><text y="360">1337</text><text y="390">0xDEAD</text><text y="420">NULL-0000</text><text y="450">ERR0R</text>
+        <text y="480">3RR0R-X-4421</text><text y="510">%%##-99-XXXX</text><text y="540">0xBADF00D</text>
+        <text y="570">!GLITCH_DETECTED_0xDEADBEEF!</text>
+        <text y="600">-9999</text><text y="630">1337</text><text y="660">0xDEAD</text><text y="690">NULL-0000</text><text y="720">ERR0R</text>
+        <text y="750">3RR0R-X-4421</text><text y="780">%%##-99-XXXX</text>
+        <text y="810">!CRITICAL_KERNEL_PANIC_0x00000000!</text>
+      </g>
+    </g>
+
+    <g clip-path="url(#b-clip)">
+      <g font-family="'Courier New',monospace" font-size="13" font-weight="bold" fill="#ff00ff">
+        <animate attributeName="opacity" dur="0.14s" values="0;0.7;0" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" dur="20s" repeatCount="indefinite" calcMode="discrete"
+          keyTimes="0;0.02;0.083;0.088;0.127;0.203;0.213;0.263;0.318;0.333;0.395;0.403;0.438;0.498;0.543;0.598;0.608;0.67;0.675;0.68;0.73;0.745;0.775;0.835;0.845;0.89;0.953;0.968;1"
+          values="112,19;112,-11;112,-41;112,-71;112,-101;112,-131;112,-161;112,-191;112,-221;112,-251;112,-281;112,-311;112,-341;112,-371;112,-401;112,-431;112,-461;112,-491;112,-521;112,-551;112,-581;112,-611;112,-641;112,-671;112,-701;112,-731;112,-761;112,-791;112,-821"/>
+        <text y="0">-9999</text><text y="30">1337</text><text y="60">0xDEAD</text><text y="90">-00001</text><text y="120">NULL-0000</text>
+        <text y="150">ERR0R</text><text y="180">3RR0R-X-4421</text><text y="210">%%##-99-XXXX</text><text y="240">0xDEAD-BFFFF</text><text y="270">-9999999999</text>
+        <text y="300">!SYSTEM_FAILURE_X_4421_9999999999!</text>
+        <text y="330">-9999</text><text y="360">1337</text><text y="390">0xDEAD</text><text y="420">NULL-0000</text><text y="450">ERR0R</text>
+        <text y="480">3RR0R-X-4421</text><text y="510">%%##-99-XXXX</text><text y="540">0xBADF00D</text>
+        <text y="570">!GLITCH_DETECTED_0xDEADBEEF!</text>
+        <text y="600">-9999</text><text y="630">1337</text><text y="660">0xDEAD</text><text y="690">NULL-0000</text><text y="720">ERR0R</text>
+        <text y="750">3RR0R-X-4421</text><text y="780">%%##-99-XXXX</text>
+        <text y="810">!CRITICAL_KERNEL_PANIC_0x00000000!</text>
+      </g>
+    </g>
+
+    <g font-family="'Courier New',monospace" font-size="13" font-weight="bold" fill="white">
+      <animateTransform attributeName="transform" type="translate" dur="20s" repeatCount="indefinite" calcMode="discrete"
+        keyTimes="0;0.02;0.083;0.088;0.127;0.203;0.213;0.263;0.318;0.333;0.395;0.403;0.438;0.498;0.543;0.598;0.608;0.67;0.675;0.68;0.73;0.745;0.775;0.835;0.845;0.89;0.953;0.968;1"
+        values="110,19;110,-11;110,-41;110,-71;110,-101;110,-131;110,-161;110,-191;110,-221;110,-251;110,-281;110,-311;110,-341;110,-371;110,-401;110,-431;110,-461;110,-491;110,-521;110,-551;110,-581;110,-611;110,-641;110,-671;110,-701;110,-731;110,-761;110,-791;110,-821"/>
+      <text y="0">-9999</text><text y="30">1337</text><text y="60">0xDEAD</text><text y="90">-00001</text><text y="120">NULL-0000</text>
+      <text y="150">ERR0R</text><text y="180">3RR0R-X-4421</text><text y="210">%%##-99-XXXX</text><text y="240">0xDEAD-BFFFF</text><text y="270">-9999999999</text>
+      <text y="300">!SYSTEM_FAILURE_X_4421_9999999999!</text>
+      <text y="330">-9999</text><text y="360">1337</text><text y="390">0xDEAD</text><text y="420">NULL-0000</text><text y="450">ERR0R</text>
+      <text y="480">3RR0R-X-4421</text><text y="510">%%##-99-XXXX</text><text y="540">0xBADF00D</text>
+      <text y="570">!GLITCH_DETECTED_0xDEADBEEF!</text>
+      <text y="600">-9999</text><text y="630">1337</text><text y="660">0xDEAD</text><text y="690">NULL-0000</text><text y="720">ERR0R</text>
+      <text y="750">3RR0R-X-4421</text><text y="780">%%##-99-XXXX</text>
+      <text y="810">!CRITICAL_KERNEL_PANIC_0x00000000!</text>
+    </g>
+  </g>
+</svg>
