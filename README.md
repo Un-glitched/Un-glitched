@@ -16,9 +16,7 @@
 
 <div align="center">
 
-![visitors](assets/glitch_visitors.svg)
-![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/YOUR_REPO?style=flat-square&color=FF0055)
-![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/YOUR_REPO?style=flat-square&color=CC00FF)
+![visitors](glitch_visitors.svg)
 
 </div>
 
