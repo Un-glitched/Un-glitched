@@ -1,0 +1,74 @@
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  .wrap { padding: 1.5rem 0; display: flex; flex-direction: column; gap: 1.25rem; }
+  .row { display: flex; flex-direction: column; gap: 6px; }
+  .lbl { font-size: 10px; color: #444; font-family: monospace; letter-spacing: 0.15em; text-transform: uppercase; }
+  .lbl .ok { color: #28c840; } .lbl .bad { color: #ff5f57; }
+  .badge-row { display: flex; align-items: center; font-family: 'Courier New', monospace; width: fit-content; border-radius: 4px; overflow: hidden; border: 0.5px solid rgba(255,0,85,0.25); }
+  .b-left { background: #0a0a0a; color: #888; padding: 5px 10px; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; border-right: 1px solid rgba(255,0,85,0.15); display: flex; align-items: center; white-space: nowrap; }
+  .b-right { background: #FF0055; color: #fff; padding: 5px 12px; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+  .scanline { position: absolute; inset: 0; background: repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.12) 2px,rgba(0,0,0,0.12) 4px); pointer-events: none; }
+  .gval { position: relative; display: inline-block; font-family: 'Courier New', monospace; white-space: nowrap; }
+  .gval::before { content: attr(data-text); position: absolute; top:0; left:0; color:#0ff; clip-path:polygon(0 0,100% 0,100% 40%,0 40%); animation:gt 0.25s infinite; }
+  .gval::after  { content: attr(data-text); position: absolute; top:0; left:0; color:#f0f; clip-path:polygon(0 60%,100% 60%,100% 100%,0 100%); animation:gb 0.25s infinite; }
+  @keyframes gt { 0%{transform:translate(-2px,0)} 50%{transform:translate(2px,-1px)} 100%{transform:translate(-2px,0)} }
+  @keyframes gb { 0%{transform:translate(2px,0)} 50%{transform:translate(-3px,1px)} 100%{transform:translate(2px,0)} }
+  .one-badge { background: #FF0055; color: white; font-family: 'Share Tech Mono', 'Courier New', monospace; font-size: 13px; padding: 5px 14px; border-radius: 4px; width: fit-content; white-space: nowrap; overflow: hidden; border: 0.5px solid rgba(255,0,85,0.4); }
+  .typing { display: inline-block; border-right: 2px solid white; animation: blink 0.5s step-end infinite; }
+  @keyframes blink { 50% { border-color: transparent; } }
+  .divider { border: none; border-top: 0.5px solid #1a1a1a; }
+  .verdict { background: #0d0d0d; border: 0.5px solid #222; border-radius: 8px; padding: 12px 14px; font-family: monospace; font-size: 11px; color: #555; line-height: 1.9; }
+  .verdict .r { color: #FF0055; } .verdict .g { color: #28c840; }
+</style>
+
+<div class="wrap">
+
+  <div class="row">
+    <div class="lbl"><span class="ok">OPTION A</span> — SVG in your repo (looks exactly like preview)</div>
+    <div class="badge-row" id="badge">
+      <div class="b-left">VISITORS</div>
+      <div class="b-right" id="bright">
+        <span class="gval" id="gval" data-text="-9999">-9999</span>
+        <div class="scanline"></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="row">
+    <div class="lbl"><span class="bad">OPTION B</span> — the URL you just sent (what it actually looks like)</div>
+    <div class="one-badge">VISITORS | <span class="typing" id="typer">ERR0R</span></div>
+  </div>
+
+  <div class="verdict">
+    option A — <span class="g">black left box + red right box + glitch effect</span><br>
+    option B — <span class="r">one solid red block, no split, just typing animation</span><br><br>
+    to get option A on github → upload the <span class="g">glitch_visitors.svg</span> file i gave you<br>
+    then use  <span class="g">![visitors](./assets/glitch_visitors.svg)</span>
+  </div>
+
+</div>
+
+<script>
+const pool = ['-9999','0xDEAD','1010','∞','NULL','0xFFFF','-00001','9999999','1337','-9001','3RR0R-X-4421','0xDEAD-BFFFF','-99999999999','NULL-0000','%%##-99-XXXX','ERR0R','0xBADF00D','-0xFFFF'];
+const el = document.getElementById('gval'), br = document.getElementById('bright'), badge = document.getElementById('badge');
+function set(v) { el.textContent=v; el.setAttribute('data-text',v); br.style.minWidth=Math.max(70,Math.round(v.length*8.5+24))+'px'; }
+function glitch() {
+  let n=0, max=6+Math.floor(Math.random()*12);
+  const t=setInterval(()=>{
+    const v=pool[Math.floor(Math.random()*pool.length)]; set(v);
+    if(Math.random()<0.25){br.style.transform=`translateX(${(Math.random()-.5)*5}px)`;br.style.filter=`hue-rotate(${Math.random()*360}deg)`;}
+    else{br.style.transform='';br.style.filter='';}
+    if(Math.random()<0.15)badge.style.opacity='0.5'; else badge.style.opacity='1';
+    if(++n>=max){clearInterval(t);br.style.transform='';br.style.filter='';badge.style.opacity='1';set(pool[Math.floor(Math.random()*pool.length)]);setTimeout(glitch,600+Math.random()*1400);}
+  },75);
+}
+setTimeout(glitch,400);
+
+const lines=['ERR0R','-9999999999','0xDEAD-BFFFF','NULL-0000','%%##-99-XXXX'];
+let li=0; const typer=document.getElementById('typer');
+function nextLine(){typer.textContent=lines[li++ % lines.length];setTimeout(nextLine,1200);}
+setTimeout(nextLine,800);
+</script>
