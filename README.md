@@ -16,7 +16,7 @@
 
 <div align="center">
 
-![visitors](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=13&duration=200&pause=80&color=FFFFFF&background=FF0055&center=true&vCenter=true&width=300&height=28&lines=VISITORS+%7C+ERR0R;VISITORS+%7C+-9999999999;VISITORS+%7C+0xDEAD-BFFFF;VISITORS+%7C+NULL-0000;VISITORS+%7C+%25%25%23%23-99-XXXX)
+![visitors](./assets/glitch_visitors.svg)
 ![glitch](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=13&duration=200&pause=80&color=FFFFFF&background=FF0055&center=true&vCenter=true&width=160&height=28&lines=ERR0R;-9999999999;0xDEAD-BFFFF;NULL-0000;%25%25%23%23-99-XXXX)
 
 </div>
