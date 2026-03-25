@@ -16,8 +16,10 @@
 
 <div align="center">
 
-![visitors](./assets/glitch_visitors.svg)
-![glitch](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=13&duration=200&pause=80&color=FFFFFF&background=FF0055&center=true&vCenter=true&width=160&height=28&lines=ERR0R;-9999999999;0xDEAD-BFFFF;NULL-0000;%25%25%23%23-99-XXXX)
+![visitors](https://img.shields.io/badge/VISITORS-%23000000?style=for-the-badge&labelColor=000000)
+![glitch](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=13&duration=200&pause=80&color=FFFFFF&background=FF0055&center=true&vCenter=true&width=160&height=28&lines=NUJJ.;1010;-9999;-0xFFFF;1337;0xDEAD;NULL-0000;3RR0R-X-4421;%25%25%23%23-99-XXXX;0xDEAD-BFFFF)
+
+</div>
 
 </div>
 
