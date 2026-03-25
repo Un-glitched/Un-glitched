@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="28" viewBox="0 0 500 28">
+  <defs>
+    <pattern id="scan" x="0" y="0" width="100%" height="4" patternUnits="userSpaceOnUse">
+      <rect width="100%" height="2" fill="none"/>
+      <rect y="2" width="100%" height="2" fill="rgba(0,0,0,0.15)"/>
+    </pattern>
+    <clipPath id="rc"><rect x="100" y="0" width="400" height="28"/></clipPath>
+    <clipPath id="badge"><rect width="500" height="28" rx="4"/></clipPath>
+    <filter id="grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="4" seed="9" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <!-- Top-half and bottom-half clips for vertical chromatic aberration -->
+    <clipPath id="tc"><rect x="0" y="0" width="5000" height="14"/></clipPath>
+    <clipPath id="bc"><rect x="0" y="14" width="5000" height="14"/></clipPath>
+  </defs>
+
+  <!-- dur=7.4s: 8×0.05s + 10×0.1s + 4×1.5s = 7.4s -->
+  <g clip-path="url(#badge)">
+    <animateTransform attributeName="transform" type="translate" additive="sum"
+      dur="7.4s" repeatCount="indefinite" calcMode="discrete"
+      keyTimes="0;0.482;0.486;0.490;0.494;0.498;0.502;0.807;0.811;0.815;0.819;0.823;0.827;1"
+      values="0,0;0,0;4,0;-4,0;5,0;-3,0;1,0;0,0;0,0;-4,0;5,0;-3,0;2,0;0,0"/>
+
+    <rect width="101" height="28" fill="#000"/>
+    <rect x="100" height="28" fill="#FF0055">
+      <animate attributeName="width" dur="7.4s" repeatCount="indefinite" calcMode="discrete"
+        keyTimes="0;0.007;0.014;0.216;0.419;0.432;0.439;0.453;0.466;0.473;0.486;0.500;0.507;0.520;0.534;0.541;0.554;0.568;0.574;0.777;0.980;0.986"
+        values="70;60;60;60;80;70;65;65;75;100;130;130;65;370;85;90;90;130;65;110;70;250"/>
+      <animate attributeName="fill" dur="7.4s" repeatCount="indefinite" calcMode="discrete"
+        keyTimes="0;0.006;0.007;0.011;0.013;0.014;0.018;0.215;0.216;0.220;0.418;0.419;0.423;0.485;0.486;0.490;0.519;0.520;0.524;0.573;0.574;0.578;0.979;0.980;0.984;1"
+        values="#FF0055;#FF0055;#CC00FF;#FF0055;#FF0055;#0066FF;#FF0055;#FF0055;#FF00AA;#FF0055;#FF0055;#00FF00;#FF0055;#FF0055;#CC00FF;#FF0055;#FF0055;#0066FF;#FF0055;#FF0055;#FF00AA;#FF0055;#FF0055;#00FF00;#FF0055;#FF0055"/>
+    </rect>
+    <rect x="100" width="400" height="28" fill="url(#scan)" pointer-events="none"/>
+    <rect height="28" rx="4" fill="none" stroke="rgba(255,0,85,0.45)" stroke-width="1">
+      <animate attributeName="width" dur="7.4s" repeatCount="indefinite" calcMode="discrete"
+        keyTimes="0;0.007;0.014;0.216;0.419;0.432;0.439;0.453;0.466;0.473;0.486;0.500;0.507;0.520;0.534;0.541;0.554;0.568;0.574;0.777;0.980;0.986"
+        values="170;160;160;160;180;170;165;165;175;200;230;230;165;470;185;190;190;230;165;210;170;350"/>
+    </rect>
+    <rect x="100" width="400" height="28" fill="white" filter="url(#grain)" opacity="0.07" pointer-events="none"/>
+    <rect x="100" width="400" height="28" fill="white" opacity="0" pointer-events="none">
+      <animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete"
+        keyTimes="0;0.269;0.270;0.274;0.675;0.676;0.680;1"
+        values="0;0;0.88;0;0;0.82;0;0"/>
+    </rect>
+    <text x="8" y="19" font-family="Courier New,monospace" font-size="10" letter-spacing="2" fill="white" font-weight="bold">VISITORS</text>
+
+    <g clip-path="url(#rc)">
+      <animateTransform attributeName="transform" type="translate" additive="sum"
+        dur="7.4s" repeatCount="indefinite" calcMode="discrete"
+        keyTimes="0;0.131;0.135;0.139;0.143;0.147;0.577;0.581;0.585;0.589;0.593;1"
+        values="0,0;0,0;0,-4;0,3;0,-2;0,0;0,0;0,3;0,-4;0,2;0,0;0,0"/>
+
+      <!-- 0: NULL. 0.05s -->
+      <g opacity="1"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.007;1" values="1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">NULL.<animate attributeName="x" dur="0.19s" values="119;120;118;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">NULL.<animate attributeName="x" dur="0.21s" values="105;104;106;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">NULL.</text>
+      </g>
+      <!-- 1: 1337 0.05s -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.007;0.014;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">1337<animate attributeName="x" dur="0.19s" values="119;120;118;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">1337<animate attributeName="x" dur="0.21s" values="105;104;106;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">1337</text>
+      </g>
+      <!-- 2: -999 1.5s SLOW -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.014;0.216;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">-999<animate attributeName="x" dur="0.19s" values="119;120;118;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">-999<animate attributeName="x" dur="0.21s" values="105;104;106;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">-999</text>
+      </g>
+      <!-- 3: 27 1.5s SLOW -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.216;0.419;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">27<animate attributeName="x" dur="0.19s" values="119;120;118;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">27<animate attributeName="x" dur="0.21s" values="105;104;106;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">27</text>
+      </g>
+      <!-- 4: 0xDEAD 0.1s -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.419;0.432;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">0xDEAD<animate attributeName="x" dur="0.19s" values="119;120;118;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">0xDEAD<animate attributeName="x" dur="0.21s" values="105;104;106;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">0xDEAD</text>
+      </g>
+      <!-- 5: ERROR 0.05s -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.432;0.439;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">ERROR<animate attributeName="x" dur="0.19s" values="119;120;118;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">ERROR<animate attributeName="x" dur="0.21s" values="105;104;106;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">ERROR</text>
+      </g>
+      <!-- 6: 404 0.1s NEW -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.439;0.453;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">404<animate attributeName="x" dur="0.19s" values="119;120;118;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">404<animate attributeName="x" dur="0.21s" values="105;104;106;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">404</text>
+      </g>
+      <!-- 7: 1010 0.1s -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.453;0.466;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">1010<animate attributeName="x" dur="0.12s" values="120;121;119;120" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">1010<animate attributeName="x" dur="0.12s" values="104;103;105;104" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">1010</text>
+      </g>
+      <!-- 8: -31337 0.05s -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.466;0.473;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">-31337<animate attributeName="x" dur="0.19s" values="119;120;118;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">-31337<animate attributeName="x" dur="0.21s" values="105;104;106;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">-31337</text>
+      </g>
+      <!-- 9: 0xBADF00D 0.1s NEW -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.473;0.486;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">0xBADF00D<animate attributeName="x" dur="0.19s" values="119;120;118;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">0xBADF00D<animate attributeName="x" dur="0.21s" values="105;104;106;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">0xBADF00D</text>
+      </g>
+      <!-- 10: 3RR0R-X-4421 0.1s -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.486;0.500;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">3RR0R-X-4421<animate attributeName="x" dur="0.19s" values="119;120;118;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">3RR0R-X-4421<animate attributeName="x" dur="0.21s" values="105;104;106;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">3RR0R-X-4421</text>
+      </g>
+      <!-- 11: %%##-99-XXXX 0.05s -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.500;0.507;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">%%##-99-XXXX<animate attributeName="x" dur="0.19s" values="119;120;118;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">%%##-99-XXXX<animate attributeName="x" dur="0.21s" values="105;104;106;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">%%##-99-XXXX</text>
+      </g>
+      <!-- 12: -58 0.1s NEW -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.507;0.520;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">-58<animate attributeName="x" dur="0.19s" values="119;120;118;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">-58<animate attributeName="x" dur="0.21s" values="105;104;106;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">-58</text>
+      </g>
+      <!-- 13: !!%%##_0xBAD_$$??_-9999_\\//##_0xFF_$$!!%% 0.1s -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.520;0.534;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">!!%%##_0xBAD_$$??_-9999_\\//##_0xFF_$$!!%%<animate attributeName="x" dur="0.12s" values="119;121;117;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">!!%%##_0xBAD_$$??_-9999_\\//##_0xFF_$$!!%%<animate attributeName="x" dur="0.12s" values="105;103;107;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">!!%%##_0xBAD_$$??_-9999_\\//##_0xFF_$$!!%%</text>
+      </g>
+      <!-- 14: 0xFFFFF 0.05s -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.534;0.541;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">0xFFFFF<animate attributeName="x" dur="0.19s" values="119;120;118;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">0xFFFFF<animate attributeName="x" dur="0.21s" values="105;104;106;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">0xFFFFF</text>
+      </g>
+      <!-- 15: SYS_ERR 0.1s NEW -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.541;0.554;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">SYS_ERR<animate attributeName="x" dur="0.19s" values="119;120;118;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">SYS_ERR<animate attributeName="x" dur="0.21s" values="105;104;106;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">SYS_ERR</text>
+      </g>
+      <!-- 16: 0xC0FFEE 0.1s -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.554;0.568;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">0xC0FFEE<animate attributeName="x" dur="0.19s" values="119;120;118;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">0xC0FFEE<animate attributeName="x" dur="0.21s" values="105;104;106;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">0xC0FFEE</text>
+      </g>
+      <!-- 17: 0xDEAD-BFFFF 0.05s -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.568;0.574;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">0xDEAD-BFFFF<animate attributeName="x" dur="0.19s" values="119;120;118;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">0xDEAD-BFFFF<animate attributeName="x" dur="0.21s" values="105;104;106;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">0xDEAD-BFFFF</text>
+      </g>
+      <!-- 18: 482 1.5s SLOW -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.574;0.777;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">482<animate attributeName="x" dur="0.19s" values="119;120;118;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">482<animate attributeName="x" dur="0.21s" values="105;104;106;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">482</text>
+      </g>
+      <!-- 19: NULL-ALLOC 1.5s SLOW -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.777;0.980;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">NULL-ALLOC<animate attributeName="x" dur="0.19s" values="119;120;118;119" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">NULL-ALLOC<animate attributeName="x" dur="0.21s" values="105;104;106;105" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">NULL-ALLOC</text>
+      </g>
+      <!-- 20: 3RR0R 0.05s -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.980;0.986;1" values="0;1;0;0"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">3RR0R<animate attributeName="x" dur="0.1s" values="120;122;118;120" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">3RR0R<animate attributeName="x" dur="0.1s" values="104;102;106;104" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">3RR0R</text>
+      </g>
+      <!-- 21: !SYSTEM_FAILURE_0xDEADBEEF! 0.1s MASSIVE STRETCH -->
+      <g opacity="0"><animate attributeName="opacity" dur="7.4s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.986" values="0;1"/>
+        <g clip-path="url(#tc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#00FFFF" fill-opacity="1" stroke="#00FFFF" stroke-width="1">!SYSTEM_FAILURE_0xDEADBEEF!<animate attributeName="x" dur="0.1s" values="120;122;118;120" repeatCount="indefinite"/></text></g>
+        <g clip-path="url(#bc)"><text y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="#FF00AA" fill-opacity="1" stroke="#FF00AA" stroke-width="1">!SYSTEM_FAILURE_0xDEADBEEF!<animate attributeName="x" dur="0.1s" values="104;102;106;104" repeatCount="indefinite"/></text></g>
+        <text x="112" y="19" font-family="Courier New,monospace" font-size="13" font-weight="bold" fill="white">!SYSTEM_FAILURE_0xDEADBEEF!</text>
+      </g>
+    </g>
+  </g>
+</svg>
