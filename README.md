@@ -68,7 +68,9 @@
 ![Linux](https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=FF0055)
  
 </div>
- 
+
+---
+
 <div align="center">
  
 ## STATS 
