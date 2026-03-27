@@ -75,7 +75,7 @@
  
 ## STATS 
  
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Un-glitched&show_icons=true&theme=dark&title_color=FF0055&icon_color=FF0055&text_color=ffffff&bg_color=000000&border_color=FF0055)
+![GitHub Stats](https://github-readme-stats-one.vercel.app/api?username=Un-glitched&show_icons=true&theme=dark&title_color=FF0055&icon_color=FF0055&text_color=ffffff&bg_color=000000&border_color=FF0055)
 <br>
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Un-glitched&layout=compact&theme=dark&title_color=FF0055&text_color=ffffff&bg_color=000000&border_color=FF0055)
 <br>
